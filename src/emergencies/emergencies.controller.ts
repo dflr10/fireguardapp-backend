@@ -2,7 +2,7 @@ import { Controller, Get, Post, Body } from "@nestjs/common";
 import { EmergenciesService } from "./emergencies.service";
 import { CreateEmergencyDto } from "./dto/create-emergency.dto";
 
-@Controller("api/emergencies")
+@Controller("emergencies")
 export class EmergenciesController {
   constructor(private service: EmergenciesService) {}
 
