@@ -36,7 +36,7 @@ export class CreateEmergencyDto {
   lng: number;
 
   @IsString()
-  @IsIn(["abierta", "en_proceso", "cerrada"])
+  @IsIn(["Abierta", "En proceso", "Cerrada"])
   status: string;
 
   @IsString()
