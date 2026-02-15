@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
-import { Emergency } from "./emergency.entity";
+import { Emergency } from "./entities/emergency.entity";
 import { CreateEmergencyDto } from "./dto/create-emergency.dto";
 
 
