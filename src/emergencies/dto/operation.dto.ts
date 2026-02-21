@@ -19,11 +19,11 @@ export class OperationDto {
 
   @IsOptional()
   @IsDateString()
-  departureTime?: Date;
+  departureTime?: string;
 
   @IsOptional()
   @IsDateString()
-  arrivalTime?: Date;
+  arrivalTime?: string;
 
   @IsOptional()
   @IsNumber()

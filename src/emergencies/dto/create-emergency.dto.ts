@@ -99,9 +99,10 @@ export class CreateEmergencyDto {
   // SUBMODULES
 
   @IsOptional()
-  @ValidateNested()
+  @IsArray()
+  @ValidateNested({ each: true })
   @Type(() => OperationDto)
-  operation?: OperationDto;
+  operations?: OperationDto[];
 
   @IsOptional()
   @ValidateNested()

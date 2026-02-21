@@ -19,10 +19,10 @@ export class Operation {
   vehicle: string;
 
   @Column({ type: 'timestamp', nullable: true })
-  departureTime: Date;
+  departureTime: string;
 
   @Column({ type: 'timestamp', nullable: true })
-  arrivalTime: Date;
+  arrivalTime: string;
 
   @Column({ nullable: true })
   units: number;
