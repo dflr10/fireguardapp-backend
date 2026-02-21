@@ -3,7 +3,7 @@ import { IsOptional, IsString } from 'class-validator';
 export class AdditionalDto {
   @IsOptional()
   @IsString()
-  affectedName?: string;
+  victimName?: string;
 
   @IsOptional()
   @IsString()
