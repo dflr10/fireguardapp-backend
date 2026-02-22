@@ -7,7 +7,7 @@ export class Impact {
   id: string;
 
   @Column({ default: 0 })
-  deceased: number;
+  deaths: number;
 
   @Column({ default: 0 })
   injured: number;
