@@ -19,13 +19,13 @@ export class Impact {
   affectedPersons: number;
 
   @Column({ default: 0 })
-  families: number;
+  affectedFamilies: number;
 
   @Column({ default: 0 })
-  housesAffected: number;
+  affectedHouses: number;
 
   @Column({ default: 0 })
-  housesDestroyed: number;
+  affectedHousesDestroyed: number;
 
   @Column({ nullable: true })
   area: string;
