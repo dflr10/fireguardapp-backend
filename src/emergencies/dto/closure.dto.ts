@@ -19,5 +19,16 @@ export class ClosureDto {
 
   @IsOptional()
   @IsString()
+  heas?: string;
+
+  @IsOptional()
+  @IsString()
   observations?: string;
+
+  @IsOptional()
+  expenses?: any; 
+
+  @IsOptional()
+  @IsString()
+  incidents?: string;
 }
