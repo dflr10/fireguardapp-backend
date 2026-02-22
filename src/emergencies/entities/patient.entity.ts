@@ -16,6 +16,9 @@ export class PatientReport {
   age: number;
 
   @Column({ nullable: true })
+  gender: string;
+
+  @Column({ nullable: true })
   phone: string;
 
   @Column({ nullable: true })
