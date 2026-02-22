@@ -1,4 +1,4 @@
-import { IsOptional, IsNumber } from 'class-validator';
+import { IsOptional, IsNumber, IsString } from 'class-validator';
 
 export class ImpactDto {
   @IsOptional() @IsNumber() deaths?: number;
@@ -8,4 +8,5 @@ export class ImpactDto {
   @IsOptional() @IsNumber() affectedFamilies?: number;
   @IsOptional() @IsNumber() damagedHomes?: number;
   @IsOptional() @IsNumber() destroyedHomes?: number;
+  @IsOptional() @IsString() area?: string;
 }
