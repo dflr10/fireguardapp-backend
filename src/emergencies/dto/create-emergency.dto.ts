@@ -73,6 +73,7 @@ export class CreateEmergencyDto {
     'heart_plus',
     'campaign',
     'flame_delete',
+    'tornado',
   ])
   type: string;
 
