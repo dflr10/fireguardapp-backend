@@ -15,7 +15,11 @@ export class PatientReport {
   @Column({ nullable: true })
   age: number;
 
-  @Column({ nullable: true })
+  @Column({
+    type: 'enum',
+    enum: ['Masculino', 'Femenino', 'Otro', 'No especifica'],
+    nullable: true,
+  })
   gender: string;
 
   @Column({ nullable: true })
@@ -51,6 +55,6 @@ export class PatientReport {
   @Column({ nullable: true })
   status: string;
 
-  @ManyToOne(() => Emergency, e => e.patients)
+  @ManyToOne(() => Emergency, (e) => e.patients)
   emergency: Emergency;
 }
